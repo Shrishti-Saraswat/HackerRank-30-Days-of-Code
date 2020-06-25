@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+t=int(input())
+for i in range(t):
+    s1=input()
+    se=""
+    so=""
+    for i in range(len(s1)):
+        if i%2==0:
+            se+=s1[i]
+        else:
+            so+=s1[i]
+    print(se,so)            
