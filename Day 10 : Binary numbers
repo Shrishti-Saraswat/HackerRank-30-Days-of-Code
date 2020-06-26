@@ -1,0 +1,24 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+    max1=0
+    c=0
+    while(n!=0):
+        a=n//2
+        r=n-2*a
+        n=a
+        if r==1:
+            c+=1
+            max1=max(max1,c)
+        else:
+            c=0    
+    print(max1)        
